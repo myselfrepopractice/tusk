@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+
+    </head>
+    <body>
+        number1:
+        <input type="text" id="num1"><br><br>
+        number2:
+        <input type="text" id="num2"><br><br>
+        <form>
+        <input type="radio" id="op1" value="+" name="operator">+<br>
+        <input type="radio" id="op2" value="-" name="operator">-<br>
+        <input type="radio" id="op3" value="*" name="operator">*<br>	
+        <input type="radio" id="op4" value="/" name="operator">/<br>
+        </form>
+        <input type="button" value="click me" onClick="calculator()">
+
+        <script>
+            function calculator(){
+            var num1=parseFloat(document.getElementById("num1").value);
+	        var num2=parseFloat(document.getElementById("num2").value);
+	
+	        if(document.getElementById("op1").checked){
+	
+	            alert(num1+num2);
+	     
+	        }
+	        else if(document.getElementById("op2").checked){
+	
+	            alert(num1-num2);
+	     
+	        }
+	        else if(document.getElementById("op3").checked){
+	
+	            alert(num1*num2);
+	     
+	        }
+	        else if(document.getElementById("op4").checked){
+	
+	            alert(num1/num2);
+	     
+	        }
+	
+
+        }
+        </script>
+</body>
+</html>
